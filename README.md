@@ -22,7 +22,7 @@ List<Packege> packages = JP.fromList(body, Package.class);
 
 ```
 
-See [Sample Code]()
+See [Sample Code](/app/src/main/java/com/fcannizzaro/jsoup/sample)
 
 # Annotations
 
@@ -50,10 +50,12 @@ String title;
 String href;
 ```
 
-## ForEach(String: query)
+## @ForEach(String: query)
 ```java
 @ForEach("li")
-void iterate(Element el, [, int index]){
+void iterate(Element element, int index){
+  // [required] element
+  // [optional] index 
   // do something
 }
 ```

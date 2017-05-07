@@ -44,7 +44,7 @@ List<Packege> packages = JP.fromList(body, Package.class);
 
 ```
 
-See [Sample Code](https://github.com/fcannizzaro/jsoup-annotations/app/src/main/java/com/fcannizzaro/jsoup/sample)
+See [Sample Code](https://github.com/fcannizzaro/jsoup-annotations/tree/master/app/src/main/java/com/fcannizzaro/jsoup/sample)
 
 # Annotations
 

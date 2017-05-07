@@ -1,7 +1,29 @@
 # jsoup-annotations
 Jsoup Annotations POJO
 
+[![](https://jitpack.io/v/fcannizzaro/jsoup-annotations.svg)](https://jitpack.io/#fcannizzaro/jsoup-annotations)
+
 ![](/icon.png)
+
+# Gradle Dependency
+
+## Step 1.
+Add the JitPack repository to your build file
+```gradle
+  allprojects {
+    repositories {
+      ...
+      maven { url 'https://jitpack.io' }
+    }
+  }
+```
+## Step 2.
+Add the dependency
+```gradle
+  dependencies {
+    compile 'com.github.fcannizzaro:jsoup-annotations:1.0.0'
+  }
+```
 
 # Usage
 
@@ -61,10 +83,10 @@ void iterate(Element element, int index){
 ```
 
 ## @Child
-Denote Field as child element (POJO).
+Denote **Field** as child element (POJO).
 
 ## @Items
-Denote Field as List of Elements (POJO).
+Denote **Field** as List of Elements (POJO).
 
 # License
 ```

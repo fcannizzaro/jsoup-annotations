@@ -23,7 +23,7 @@ Add the JitPack repository to your build file
 Add the dependency
 ```gradle
   dependencies {
-    compile 'com.github.fcannizzaro:jsoup-annotations:1.0.1'
+    compile 'com.github.fcannizzaro:jsoup-annotations:1.0.2'
   }
 ```
 
@@ -87,6 +87,14 @@ void iterate(Element element, int index){
   // [required] element
   // [optional] index 
   // do something
+}
+```
+
+## @AfterBind
+```java
+@AfterBind
+void attached(){
+  // called after object binding is completed.
 }
 ```
 

@@ -1,5 +1,6 @@
 package com.fcannizzaro.jsoup.annotations;
 
+import com.fcannizzaro.jsoup.annotations.interfaces.AfterBind;
 import com.fcannizzaro.jsoup.annotations.interfaces.Attr;
 import com.fcannizzaro.jsoup.annotations.interfaces.Child;
 import com.fcannizzaro.jsoup.annotations.interfaces.ForEach;
@@ -106,11 +107,16 @@ public class JsoupProcessor {
 
             }
 
+            Method afterBindMethod = null;
+
             for (Method method : clazz.getMethods()) {
 
                 ForEach forEach = method.getAnnotation(ForEach.class);
+                AfterBind afterBind = method.getAnnotation(AfterBind.class);
 
-                if (forEach != null) {
+                if (afterBind != null) {
+                    afterBindMethod = method;
+                } else if (forEach != null) {
 
                     method.setAccessible(true);
 
@@ -131,6 +137,10 @@ public class JsoupProcessor {
 
                 }
 
+            }
+
+            if (afterBindMethod != null) {
+                afterBindMethod.invoke(instance);
             }
 
             return instance;

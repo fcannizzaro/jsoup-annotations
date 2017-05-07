@@ -38,11 +38,11 @@ Element html = Jsoup.connect("https://www.npmjs.com/").get();
 *  Use JsoupProcessor or JP
 */
 
-NPM npm = JP.from(body, NPM.class);
+NPM npm = JP.from(html, NPM.class);
 
 // or
 
-List<Package> packages = JP.fromList(body, Package.class);
+List<Package> packages = JP.fromList(html, Package.class);
 
 ```
 

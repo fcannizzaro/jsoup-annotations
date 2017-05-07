@@ -4,6 +4,7 @@ Jsoup Annotations POJO
 [![](https://jitpack.io/v/fcannizzaro/jsoup-annotations.svg)](https://jitpack.io/#fcannizzaro/jsoup-annotations)
 
 ![](https://raw.githubusercontent.com/fcannizzaro/jsoup-annotations/master/icon.png)
+[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-jsoup--annotations-brightgreen.svg?style=flat)](https://android-arsenal.com/details/1/5713)
 
 # Gradle Dependency
 

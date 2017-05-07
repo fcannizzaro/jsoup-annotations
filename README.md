@@ -3,7 +3,7 @@ Jsoup Annotations POJO
 
 [![](https://jitpack.io/v/fcannizzaro/jsoup-annotations.svg)](https://jitpack.io/#fcannizzaro/jsoup-annotations)
 
-![](/icon.png)
+![](https://raw.githubusercontent.com/fcannizzaro/jsoup-annotations/master/icon.png)
 
 # Gradle Dependency
 
@@ -44,7 +44,7 @@ List<Packege> packages = JP.fromList(body, Package.class);
 
 ```
 
-See [Sample Code](/app/src/main/java/com/fcannizzaro/jsoup/sample)
+See [Sample Code](https://github.com/fcannizzaro/jsoup-annotations/app/src/main/java/com/fcannizzaro/jsoup/sample)
 
 # Annotations
 

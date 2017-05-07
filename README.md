@@ -42,7 +42,7 @@ NPM npm = JP.from(body, NPM.class);
 
 // or
 
-List<Packege> packages = JP.fromList(body, Package.class);
+List<Package> packages = JP.fromList(body, Package.class);
 
 ```
 

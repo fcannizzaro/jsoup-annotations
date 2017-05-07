@@ -23,7 +23,7 @@ Add the JitPack repository to your build file
 Add the dependency
 ```gradle
   dependencies {
-    compile 'com.github.fcannizzaro:jsoup-annotations:1.0.0'
+    compile 'com.github.fcannizzaro:jsoup-annotations:1.0.1'
   }
 ```
 

@@ -3,6 +3,7 @@ package com.fcannizzaro.jsoup.annotations;
 import com.fcannizzaro.jsoup.annotations.interfaces.Attr;
 import com.fcannizzaro.jsoup.annotations.interfaces.Child;
 import com.fcannizzaro.jsoup.annotations.interfaces.ForEach;
+import com.fcannizzaro.jsoup.annotations.interfaces.Html;
 import com.fcannizzaro.jsoup.annotations.interfaces.Items;
 import com.fcannizzaro.jsoup.annotations.interfaces.Selector;
 import com.fcannizzaro.jsoup.annotations.interfaces.Text;
@@ -48,17 +49,18 @@ public class JsoupProcessor {
                 Text text = field.getAnnotation(Text.class);
                 Child child = field.getAnnotation(Child.class);
                 Items items = field.getAnnotation(Items.class);
+                Html html = field.getAnnotation(Html.class);
                 Attr attr = field.getAnnotation(Attr.class);
 
                 Object value = null;
 
                 if (items != null) {
+
                     ParameterizedType type = (ParameterizedType) field.getGenericType();
                     Class<?> cz = (Class<?>) type.getActualTypeArguments()[0];
                     value = fromList(container, cz);
-                }
 
-                if (child != null) {
+                } else if (child != null) {
 
                     Class cz = field.getType();
                     Selector sel = (Selector) cz.getAnnotation(Selector.class);
@@ -67,13 +69,11 @@ public class JsoupProcessor {
                         value = from(element(container, sel.value()), cz);
                     }
 
-                }
+                } else if (selector != null) {
 
-                if (selector != null) {
                     value = element(container, selector.value());
-                }
 
-                if (text != null) {
+                } else if (text != null) {
 
                     Element el = element(container, text.value());
 
@@ -81,11 +81,17 @@ public class JsoupProcessor {
                         value = el.text();
                     }
 
-                }
+                } else if (html != null) {
 
-                if (attr != null) {
+                    Element el = element(container, html.value());
 
-                    Element el = element(container, attr.value());
+                    if (el != null) {
+                        value = el.html();
+                    }
+
+                } else if (attr != null) {
+
+                    Element el = element(container, attr.query());
 
                     if (el != null) {
                         value = el.attr(attr.attr());

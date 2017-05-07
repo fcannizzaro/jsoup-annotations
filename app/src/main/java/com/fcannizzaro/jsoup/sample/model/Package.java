@@ -24,7 +24,7 @@ public class Package {
 
     }
 
-    @Attr(value = "h3 a", attr = "href")
+    @Attr(query = "h3 a", attr = "href")
     public String link;
 
     @Text("h3")
@@ -33,7 +33,7 @@ public class Package {
     @Text("p.type-ellipsis")
     public String description;
 
-    @Attr(value = "img.mts", attr = "src")
+    @Attr(query = "img.mts", attr = "src")
     public String icon;
 
     @Child

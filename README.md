@@ -68,9 +68,15 @@ class Content {
 String title;
 ```
 
+## @Html(String: query)
+```java
+@Html("div.inner")
+String html;
+```
+
 ## @Attr(String: query, String: attr)
 ```java
-@Attr(value="a", attr="href")
+@Attr(query="a", attr="href")
 String href;
 ```
 

@@ -11,7 +11,6 @@ import java.lang.annotation.Target;
 
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.FIELD)
-public @interface Attr {
-    String query();
-    String attr();
+public @interface Html {
+    String value();
 }

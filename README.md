@@ -70,7 +70,7 @@ String title;
 
 ## @Attr(String: query, String: attr)
 ```java
-@Text(value="a", attr="href")
+@Attr(value="a", attr="href")
 String href;
 ```
 

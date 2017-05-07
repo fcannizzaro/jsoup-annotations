@@ -1,7 +1,7 @@
 # jsoup-annotations
 Jsoup Annotations POJO
 
-![](https://raw.githubusercontent.com/fcannizzaro/jsoup-annotations/master/icon.png)
+![](/icon.png)
 
 # Usage
 
@@ -26,7 +26,7 @@ See [Sample Code]()
 
 # Annotations
 
-## Selector(query)
+## @Selector(String: query)
 Can be used for class or field.
 
 ```java
@@ -38,19 +38,19 @@ class Content {
 }
 ```
 
-## Text(query)
+## @Text(String: query)
 ```java
 @Text("h3")
 String title;
 ```
 
-## Attr(query,attr)
+## @Attr(String: query, String: attr)
 ```java
 @Text(value="a", attr="href")
 String href;
 ```
 
-## ForEach(query)
+## ForEach(String: query)
 ```java
 @ForEach("li")
 void iterate(Element el, [, int index]){
@@ -58,10 +58,10 @@ void iterate(Element el, [, int index]){
 }
 ```
 
-## Child
+## @Child
 Denote Field as child element (POJO).
 
-## Items
+## @Items
 Denote Field as List of Elements (POJO).
 
 # License

@@ -17,7 +17,6 @@ public class JP {
 
     public static <T> List<T> fromList(Element container, Class<T> clazz) {
         return JsoupProcessor.fromList(container, clazz);
-
     }
 
 }

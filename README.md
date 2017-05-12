@@ -23,7 +23,7 @@ Add the JitPack repository to your build file
 Add the dependency
 ```gradle
   dependencies {
-    compile 'com.github.fcannizzaro:jsoup-annotations:1.0.2'
+    compile 'com.github.fcannizzaro:jsoup-annotations:1.0.3'
   }
 ```
 
@@ -78,6 +78,15 @@ String html;
 ```java
 @Attr(query="a", attr="href")
 String href;
+```
+
+### `Text`, `Html`, `Attr` can be also attached to methods like:
+
+```java
+@Text("head > title")
+void title(String title){
+  // do something with result
+}
 ```
 
 ## @ForEach(String: query)

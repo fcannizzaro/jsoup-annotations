@@ -2,6 +2,7 @@
 Jsoup Annotations POJO
 
 [![](https://jitpack.io/v/fcannizzaro/jsoup-annotations.svg)](https://jitpack.io/#fcannizzaro/jsoup-annotations)
+[![Build Status](https://travis-ci.org/fcannizzaro/jsoup-annotations.svg?branch=master)](https://travis-ci.org/fcannizzaro/jsoup-annotations)
 [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-jsoup--annotations-brightgreen.svg?style=flat)](https://android-arsenal.com/details/1/5713)
 
 ![](https://raw.githubusercontent.com/fcannizzaro/jsoup-annotations/master/icon.png)

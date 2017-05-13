@@ -20,6 +20,7 @@ Add the JitPack repository to your build file
     }
   }
 ```
+
 ## Step 2.
 Add the dependency
 ```gradle
@@ -113,6 +114,9 @@ Denote **Field** as child element (POJO).
 
 ## @Items
 Denote **Field** as List of Elements (POJO).
+
+# Author
+Francesco Cannizzaro (**fcannizzaro**)
 
 # License
 ```

@@ -4,6 +4,7 @@ Jsoup Annotations POJO
 [![](https://jitpack.io/v/fcannizzaro/jsoup-annotations.svg)](https://jitpack.io/#fcannizzaro/jsoup-annotations)
 [![Build Status](https://travis-ci.org/fcannizzaro/jsoup-annotations.svg?branch=master)](https://travis-ci.org/fcannizzaro/jsoup-annotations)
 [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-jsoup--annotations-brightgreen.svg?style=flat)](https://android-arsenal.com/details/1/5713)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/32be39d73dea47fda520b7fa1814f33d)](https://www.codacy.com/app/francisthemoderator/jsoup-annotations?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=fcannizzaro/jsoup-annotations&amp;utm_campaign=Badge_Grade)
 
 ![](https://raw.githubusercontent.com/fcannizzaro/jsoup-annotations/master/icon.png)
 
